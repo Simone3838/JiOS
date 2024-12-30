@@ -6,6 +6,7 @@ prompt db "jiOS> ", 0
 buffer times 256 db 0  ; Buffer for user input
 
 section .text
+extern load_gdt        ; Declare load_gdt as an external function
 global start
 
 start:
